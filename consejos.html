@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consejos de Seguridad | Ciberseguridad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <main class="d-flex flex-column flex-grow-1">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">CiberSeguridad</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="amenazas.html">Amenazas Comunes</a></li>
+            <li class="nav-item"><a class="nav-link active" href="consejos.html">Consejos de Seguridad</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-success text-white text-center py-4">
+      <h1>Consejos de Seguridad en Línea</h1>
+    </header>
+
+    <section class="container my-5">
+      <h2>Buenas Prácticas</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">✔ Usa contraseñas fuertes y únicas.</li>
+        <li class="list-group-item">✔ No compartas información personal en redes públicas.</li>
+        <li class="list-group-item">✔ Mantén tus sistemas y antivirus actualizados.</li>
+        <li class="list-group-item">✔ Verifica los enlaces antes de hacer clic.</li>
+        <li class="list-group-item">✔ Activa la autenticación en dos pasos (2FA).</li>
+      </ul>
+    </section>
+
+    <section class="container my-5">
+      <h2>Solicita más información</h2>
+      <form id="contactoForm" class="mt-3">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <section class="container text-center mb-5">
+      <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalTest">
+        Realizar Test de Seguridad
+      </button>
+    </section>
+
+    <div class="modal fade" id="modalTest" tabindex="-1" aria-labelledby="modalTestLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTestLabel">Test de Seguridad Básico</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <form id="testSeguridad">
+
+              <div class="mb-3">
+                <label>1. ¿Cuál es una buena práctica para proteger tu contraseña?</label>
+                <select class="form-select" id="pregunta1" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="correcta">Usar una contraseña larga y única</option>
+                  <option value="incorrecta">Usar tu fecha de cumpleaños</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>2. ¿Qué debes hacer si recibes un correo sospechoso?</label>
+                <select class="form-select" id="pregunta2" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="incorrecta">Abrirlo para ver si es real</option>
+                  <option value="correcta">No hacer clic y reportarlo</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>3. ¿Qué es el doble factor de autenticación (2FA)?</label>
+                <select class="form-select" id="pregunta3" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="incorrecta">Una contraseña más larga</option>
+                  <option value="correcta">Un segundo paso de verificación</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>4. ¿Por qué es importante actualizar tus programas?</label>
+                <select class="form-select" id="pregunta4" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="incorrecta">Para cambiar el diseño visual</option>
+                  <option value="correcta">Para corregir fallos de seguridad</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>5. ¿Qué tan segura es una red Wi-Fi pública?</label>
+                <select class="form-select" id="pregunta5" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="incorrecta">Completamente segura</option>
+                  <option value="correcta">Potencialmente insegura</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>6. ¿Qué hacer si una app pide muchos permisos?</label>
+                <select class="form-select" id="pregunta6" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="correcta">Revisar y negar los innecesarios</option>
+                  <option value="incorrecta">Aceptarlos todos para que funcione</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-success">Enviar Respuestas</button>
+              <div id="resultadoTest" class="mt-3"></div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 CiberSeguridad. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
