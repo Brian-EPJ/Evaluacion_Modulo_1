@@ -49,7 +49,7 @@ Evaluacion_Modulo_1/
 ## 📜 Licencia
 
 Este proyecto está bajo la licencia **MIT License**.  
-El texto completo de la licencia también se encuentra en el archivo [LICENSE](LICENSE).
+
 
 MIT License
 
